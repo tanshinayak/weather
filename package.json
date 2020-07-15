@@ -9,9 +9,9 @@
     "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "homepage": "http://tanshinayak.github.io/weather"
+    "react-scripts": "3.4.1"
   },
+  "homepage": "http://tanshinayak.github.io/weather",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
