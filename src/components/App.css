@@ -1,0 +1,44 @@
+.headingcontainer{
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    text-shadow: 2px 2px blueviolet;
+}
+.image{
+    float: right;
+    flex: 5%;
+    height: 100px;
+    width: 105px;
+}
+.heading{
+    float: right;
+    flex: 90%;
+    text-align: center;
+}
+.form{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+input{
+    height:30px;
+    width:200px;
+    border-style: double;
+    box-shadow: 2px 2px gray;
+}
+button{
+    border-radius:15px;
+    height:40px;
+    width:80px;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-size: large;
+}
+.div{
+background-image:url('../images/background.jpg');
+background-size: cover;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}

@@ -1,0 +1,23 @@
+.container{
+    background-color:black;
+    margin-top: 55px;
+    color: wheat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius:25px ;
+    height: 50vh;
+    width: 50vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+text-transform: capitalize;
+}
+.city{
+    text-align: center;
+    font-size: xx-large;
+}
+.content{
+    font-size: x-large;
+}
