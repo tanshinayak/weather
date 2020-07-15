@@ -12,7 +12,7 @@ const App=()=>{
         .then(response=>{
             setWeather(response.data.current)}
         )
-        .catch((err)=>{alert("Enter a correct city or country")},[city])
+        .catch((err)=>{console.log(err)},[city])
         })
     const handlesubmit=(event)=>{
         event.preventDefault()
