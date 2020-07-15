@@ -8,12 +8,12 @@ const App=()=>{
     const [search,setsearch]=useState("")
     const [weather,setWeather]=useState("")
     useEffect(()=>{
-        axios.get(`http://api.weatherstack.com/current?access_key=ec04f8fdac25ddf878d0751d17c8bb72&query=${city}`)
+        axios.get(`https://api.weatherstack.com/current?access_key=ec04f8fdac25ddf878d0751d17c8bb72&query=${city}`)
         .then(response=>{
             setWeather(response.data.current)}
         )
-        .catch((err)=>console.log(err))},[city])
-
+        .catch(()=>{alert("Enter a correct city")},[city])
+        })
     const handlesubmit=(event)=>{
         event.preventDefault()
         setcity(search)
