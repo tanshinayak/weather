@@ -4,16 +4,18 @@ import Body from "./body"
 import './App.css'
 import github from '../images/github.png'
 const App=()=>{
-    const [city,setcity]=useState("New delhi")
+    const [city,setcity]=useState("New Delhi")
+    const [country,setcountry]=useState("IN")
     const [search,setsearch]=useState("")
     const [weather,setWeather]=useState("")
     useEffect(()=>{
-        axios.get(`http://api.weatherstack.com/current?access_key=96fcdfb55ec346e849f0f93699e6ea7c&query=${city}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4ef40c451ac2b825cdd38bb96edc2e03`)
         .then(response=>{
-            setWeather(response.data.current)}
+            setWeather(response.data.main)
+        setcountry(response.data.sys.country)}
         )
-        .catch((err)=>{console.log(err)},[city])
-        })
+        .catch((err)=>{console.log(err)})
+        },[city])
     const handlesubmit=(event)=>{
         event.preventDefault()
         setcity(search)
@@ -29,7 +31,7 @@ return(
           <input type='text' value={search} onChange={handlesearch}/>
           <button>Search</button>
         </form>
-        <Body city={city} weather={weather} toogle='°C'/>
+        <Body city={city} weather={weather} toogle='°K' country={country}/>
     </div>
 )
 }
