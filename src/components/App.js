@@ -4,11 +4,11 @@ import Body from "./body"
 import './App.css'
 import github from '../images/github.png'
 const App=()=>{
-    const [city,setcity]=useState("delhi")
+    const [city,setcity]=useState("New delhi")
     const [search,setsearch]=useState("")
     const [weather,setWeather]=useState("")
     useEffect(()=>{
-        axios.get(`http://api.weatherstack.com/current?access_key=ec04f8fdac25ddf878d0751d17c8bb72&query=${city}`)
+        axios.get(`http://api.weatherstack.com/current?access_key=96fcdfb55ec346e849f0f93699e6ea7c&query=${city}`)
         .then(response=>{
             setWeather(response.data.current)}
         )
