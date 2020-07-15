@@ -4,7 +4,7 @@ import Body from "./body"
 import './App.css'
 import github from '../images/github.png'
 const App=()=>{
-    const [city,setcity]=useState("New delhi")
+    const [city,setcity]=useState("delhi")
     const [search,setsearch]=useState("")
     const [weather,setWeather]=useState("")
     useEffect(()=>{
